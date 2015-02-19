@@ -1,0 +1,4 @@
+each post, slug in public.posts._data
+	!= partial("/posts/" + slug, post)
+
+p This is also a part of the partial.

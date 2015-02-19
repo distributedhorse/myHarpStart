@@ -1,0 +1,36 @@
+doctype
+html
+	head
+		link(rel="stylesheet", href="../css/normalize.css")
+		link(rel="stylesheet", href="../css/main.css")
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title TITLE GOES HERE 
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='apple-touch-icon', href='apple-touch-icon.png')
+
+		//- delete next line if you're NOT using http://livereload.com/
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+body
+	//- Assumes you want to have the same header on every page 
+	//- But see DELETE-AFTER-READING folder for a bit more about that
+	!= partial("../_shared/_header")
+
+	//- All the basic page content will go here.
+	!= yield
+
+
+	//- Add JS files into /public/js folder then list in _shared/_data.json
+	//- as described here: http://www.jonatanpedersen.com/blog/loading-page-assets-with-jade-in-harp/
+	include ../../_shared/_javascripts.jade
+
+	//- Assumes you want to have the same footer on every page
+	//- But see DELETE-AFTER-READING folder for a bit more about that too
+	!= partial("../_shared/_footer")
+
+
+	//- More notes
+	//- Using normalize instead of reset because reasons
+	//- main.css is just a big fat bunch of nested import
+	//- No modernizr, shivs or anything like that for prototype building stuff
