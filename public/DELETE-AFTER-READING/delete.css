@@ -5,3 +5,7 @@ body {
 	padding: 3em;
 	height: 0.9vh;
 }
+
+hr.blog-post {
+	margin-bottom: 5em;
+}
