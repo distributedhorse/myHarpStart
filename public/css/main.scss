@@ -1,13 +1,5 @@
+//- import all the partials (ie the files name _fileName.scss in the css folder)
+
 @import 'all';
 
-
-p.test {
-	color: $test-colour;
-}
-
-.header-test {
-	width: 100;
-	min-height: 160px;
-	background-color: orange;
-}
 
