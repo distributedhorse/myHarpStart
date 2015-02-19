@@ -17,9 +17,13 @@ More about the blog and the different layouts below.
 
 ## How to set up a Harp project using this boilerplate
 
-To use this enter following at command line (after reading the link above):
+To use this, `cd` to the folder where you want to *create* your project and enter the following iin Terminal (after reading the link above) – this will create a folder containing your project so you don't need to `mkdir` anything first:
 
+    sudo npm install -g harp
     harp init your-project-name --boilerplate i41/myHarpStart
+    harp server your-project-name -p 9000
+
+Then go to [localhost:9000](http://localhost:9000) and open up the project in your favourite text editor.
 
 ## Adding new styles and stylesheets
 
@@ -40,6 +44,13 @@ You create new blog posts in the `public/posts` folder. They won't be displayed 
 ## Using different layouts.
 
 This is a bit harder to grasp. You'll have to have a look at `DELETE-AFTER-READING/index.jade`, `another-delete.md` and `DELETE-AFTER-READING/_data.json` to get a sense of what's happening.
+
+## Designing in the browser using Harp
+
+I use [LiveReload](http://livereload.com/) to watch the project folder and instantly show changes in the browser. The code to make this happen is already in `_layout.jade`. It looks like this:
+
+        //- delete next line if you're NOT using http://livereload.com/
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 
