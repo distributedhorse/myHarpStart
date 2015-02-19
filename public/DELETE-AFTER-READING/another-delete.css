@@ -1,0 +1,30 @@
+body {
+	margin:auto;
+	max-width: 500px;
+	background-color: lightgreen;
+	padding: 1em;
+	height: 0.9vh;
+}
+
+code {
+	padding-left: 2em;
+	border-left: 3px solid grey;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: white;
+	display: block;
+}
+
+pre {
+	margin: 1em 0;
+}
+
+span.filename {
+	font-family: monospace;
+	padding: 2px;
+	background-color: yellow;
+}
+
+p {
+	margin-bottom: 1em;
+}

@@ -1,8 +1,12 @@
 
 {
 	"globals": {
-		"ourName": "PostHorse",
+		"ourName": "Our Name",
 		"myName": "Simon Bostock",
-		"twitter": "posthorse41"
+		"twitter": "posthorse41",
+		"github": "https://github.com/i41/myHarpStart",
+
+		"stylesheets": [],
+        	"javascripts": []
 	}
 }

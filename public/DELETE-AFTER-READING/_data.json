@@ -1,0 +1,10 @@
+{
+  "index": {
+    "layout": "_delete-after-reading-layout",
+    "title": "DELETE AFTER READING: THE TITLE"
+  },
+  "another-delete": {
+    "layout": "_another-delete-example",
+    "title": "All this will be deleted too"
+  }
+}
